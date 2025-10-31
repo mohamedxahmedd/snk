@@ -1,103 +1,121 @@
-# snk
+# Hello, I'm Mohamed Ahmed 👋
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/platane/platane/main.yml?label=action&style=flat-square)](https://github.com/Platane/Platane/actions/workflows/main.yml)
-[![GitHub release](https://img.shields.io/github/release/platane/snk.svg?style=flat-square)](https://github.com/platane/snk/releases/latest)
-[![GitHub marketplace](https://img.shields.io/badge/marketplace-snake-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/generate-snake-game-from-github-contribution-grid)
-![type definitions](https://img.shields.io/npm/types/typescript?style=flat-square)
-![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
+**I'm a CS student and Flutter Developer, always building and learning.**
 
-Generates a snake game from a github user contributions graph
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Mohamed-Ahmed&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32"/>
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-</picture>
+<img width="250" align="right" src="https://c.tenor.com/_DOBjnGspYAAAAAM/code-coding.gif">
 
-Pull a github user's contribution graph.
-Make it a snake Game, generate a snake path where the cells get eaten in an orderly fashion.
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=mohamedxahmedd&label=Visitors&color=0e75b6&style=flat" alt="Profile views" />
+  
+  <a href="https://github.com/mohamedxahmedd?tab=repositories&sort=stargazers">
+    <img alt="Total stars on GitHub" title="Total stars on GitHub" src="https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=0e75b6&label=Stars&style=flat&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/mohamedxahmedd"/>
+  </a>
+  <a href="https://github.com/mohamedxahmedd">
+    <img src="https://img.shields.io/github/followers/mohamedxahmedd?label=Followers&style=social" alt="Followers"/>
+  </a>
+</p>
 
-Generate a [gif](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.gif) or [svg](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg) image. Colors can [be](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-ocean.svg) [customized](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-grey.svg).
+<p align="center">
+  <a href="https://github.com/DenverCoder1/readme-typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Flutter%20Developer%20;Always%20learning%20new%20things&font=Fira%20Code&center=true&width=690&height=120&color=58a6ff&vCenter=true&size=45">
+  </a>
+</p>
 
-Available as github action. It can automatically generate a new image each day. Which makes for great [github profile readme](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme)
+### 🔍 About Me
 
-## Usage
+- 🏢 I'm a **Flutter developer**
+- 👨‍🎓 CS student — constantly exploring new tech and sharpening problem-solving
+- 💬 Ask me about **Flutter, Dart, Firebase, BLoC,** and **problem solving**
+- ☕ **Fun fact:** coffee fuels my code — morning to night
+- 🌐 Portfolio: *(add your link here, e.g., https://your-portfolio.example)*
 
-### **github action**
+---
 
-```yaml
-- uses: Platane/snk@v3
-  with:
-    # github user name to read the contribution graph from (**required**)
-    # using action context var `github.repository_owner` or specified user
-    github_user_name: ${{ github.repository_owner }}
+<div align="center">
+  <a href="https://github.com/mohamedxahmedd">
+    <img width="60%" src="https://github-readme-stats.vercel.app/api?username=mohamedxahmedd&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&title_color=0891b2&text_color=ffffff&icon_color=0891b2" alt="GitHub stats" />
+  </a>
+  <a href="https://github.com/mohamedxahmedd">
+    <img width="38.25%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohamedxahmedd&langs_count=10&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=0891b2&text_color=ffffff&icon_color=0891b2&custom_title=Top%20Languages" alt="Top Languages" />
+  </a>
+  <a href="https://github.com/mohamedxahmedd">
+    <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=mohamedxahmedd&theme=react&hide_border=true&background=0D1117&ring=0891b2&fire=0891b2&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=0891b2&sideLabels=0891b2&dates=ffffff" width="100%" />
+  </a>
+</div>
 
-    # list of files to generate.
-    # one file per line. Each output can be customized with options as query string.
-    #
-    #  supported options:
-    #  - palette:     A preset of color, one of [github, github-dark, github-light]
-    #  - color_snake: Color of the snake
-    #  - color_dots:  Coma separated list of dots color.
-    #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
-    #                 Exactly 5 colors are expected.
-    outputs: |
-      dist/github-snake.svg
-      dist/github-snake-dark.svg?palette=github-dark
-      dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="380px" max-width="400px" width="350px" align="right">
+</p>
 
-[example with cron job](https://github.com/Platane/Platane/blob/master/.github/workflows/main.yml#L26-L33)
+## 🌱 Learning & Focus
 
-### **svg**
+- **Mobile Development:** Flutter, Dart, BLoC, Clean Architecture
+- **Ecosystem:** Firebase (Auth, Firestore, Storage), REST APIs
+- **Tooling:** Git/GitHub, CI basics, Debugging & Testing
+- **Foundations:** Data Structures, Algorithms, Problem Solving
 
-If you are only interested in generating a svg (not a gif), consider using this faster action: `uses: Platane/snk/svg-only@v3`
+<br><br>
 
-### **dark mode**
+<div>
+<h4 align="center"><br>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32"> Languages | Tools <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32">
+</h4>
+<br/>
 
-![dark mode](https://github.com/user-attachments/assets/6b900b64-0cdc-43f0-a234-e11dba8e786e)
+<h3 align="center">Tech Stack</h3>
+<p align="center">
+  <!-- Languages -->
+  <img src="https://img.shields.io/badge/-C-05122A?style=flat&logo=C" />
+  <img src="https://img.shields.io/badge/-C++-05122A?style=flat&logo=C%2B%2B&logoColor=563D7C" />
+  <img src="https://img.shields.io/badge/-Dart-05122A?style=flat&logo=Dart" />
+  <img src="https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6" />
+  <img src="https://img.shields.io/badge/-SQL-05122A?style=flat&logo=MySQL&logoColor=007ACC" />
+  <br/>
+  <!-- Frameworks & Libraries -->
+  <img src="https://img.shields.io/badge/-Flutter-05122A?style=flat&logo=Flutter" />
+  <img src="https://img.shields.io/badge/-Firebase-05122A?style=flat&logo=Firebase&logoColor=FFCA28" />
+  <img src="https://img.shields.io/badge/-BLoC-05122A?style=flat&logo=flutter" />
+  <br/>
+  <!-- Tools -->
+  <img src="https://img.shields.io/badge/-Git-05122A?style=flat&logo=git" />
+  <img src="https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github" />
+</p>
+</div>
 
-For **dark mode** support on github, use this [special syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to) in your readme.
+## 🚀 Goals
 
-```html
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
-```
+- Build and publish production-grade Flutter apps
+- Deepen knowledge of state management (BLoC) and Firebase services
+- Strengthen DSA and problem-solving for better app performance
 
-### **interactive demo**
+### 📫 Let's Connect
 
-<a href="https://platane.github.io/snk">
-  <img height="300px" src="https://user-images.githubusercontent.com/1659820/121798244-7c86d700-cc25-11eb-8c1c-b8e65556ac0d.gif" ></img>
+<a href="https://www.linkedin.com/in/mohamed-ahmed-517408238" target="_blank">
+  <img src="https://img.shields.io/badge/-Mohamed%20Ahmed-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"/>
+</a>
+<a href="mailto:mohamedahmedabdelhamed147@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/-Mohamed%20Ahmed-DB4437?style=for-the-badge&logo=Gmail&logoColor=white"/>
 </a>
 
-[platane.github.io/snk](https://platane.github.io/snk)
+## 🐍 Snake Contribution Grid
 
-### **local**
+<div align="center">
+  
+  <!-- This animation expects a GitHub Action that generates the SVG into the `output` branch.
+       If you fork this, replace `mohamedxahmedd` below with your GitHub username
+       (and enable the snake GitHub Action in your repo). -->
+  ![snake gif](https://github.com/mohamedxahmedd/mohamedxahmedd/blob/output/github-snake-dark.svg)
 
-```
-npm install
+</div>
 
-npm run dev:demo
-```
+## 🌐 Explore More
 
-## Implementation
+- Portfolio: *(add your link here, e.g., https://your-portfolio.example)*
 
-[solver algorithm](./packages/solver/README.md)
+## 🌟 Fun Fact
 
-## Contribution Policy
+> When the coffee’s strong, my widgets are stronger. ☕📱
 
-This project does not accept pull request.
-
-Reporting or fixing issues is appreciated, but change in the API or implementation should be discussed in issue first and is likely not going be greenlighted.
+<p align="center">Thanks for stopping by! 🚀</p>
